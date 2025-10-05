@@ -2,8 +2,6 @@
 
 **IntelliDash is a full-stack web application that revolutionizes data analysis by providing a conversational interface to a complex e-commerce database. Instead of writing SQL, users can ask plain English questions and receive instant, visualized answers.**
 
-[![Project Demo GIF or Screenshot](https'://your-image-host.com/intellidash-demo.gif')]([LINK-TO-LIVE-DEMO])
-*^ Click the image for a live demo (once deployed) ^*
 
 ---
 
