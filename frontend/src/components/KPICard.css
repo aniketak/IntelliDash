@@ -1,0 +1,33 @@
+/* frontend/src/components/KPICard.css */
+.kpi-card {
+  background-color: var(--content-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left; /* Align text to the left */
+}
+
+.kpi-title {
+  font-size: 0.9rem; /* Smaller title */
+  color: var(--secondary-text);
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.kpi-value {
+  font-size: 2rem; /* Slightly smaller value */
+  font-weight: 600; /* Bolder */
+  color: var(--primary-text);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.kpi-value.loading {
+  color: #e1e8ed;
+  background-color: #f4f7f9;
+  border-radius: 6px;
+  min-height: 38px; /* Match font size */
+  width: 70%; /* Don't take up the whole width */
+}

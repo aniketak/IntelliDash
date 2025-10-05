@@ -1,0 +1,66 @@
+/* frontend/src/components/History.css */
+.history-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  padding: 15px;
+  height: 100%; /* Make it fill grid cell */
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.history-header h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--primary-text);
+}
+
+.clear-button {
+  background: transparent;
+  border: none;
+  color: var(--secondary-text);
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 5px;
+}
+
+.clear-button:hover {
+  color: var(--error-color);
+}
+
+.history-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 400px; /* Or adjust as needed */
+  overflow-y: auto;
+}
+
+.history-item {
+  padding: 10px 8px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.history-item:hover {
+  background-color: var(--background-color);
+}
+
+.history-empty {
+  color: var(--secondary-text);
+  font-style: italic;
+  padding: 10px 8px;
+  font-size: 0.9rem;
+}

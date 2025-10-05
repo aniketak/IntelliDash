@@ -1,0 +1,89 @@
+:root {
+  --background-color: #f0f2f5;
+  --sidebar-bg: #ffffff;
+  --content-bg: #ffffff;
+  --primary-text: #1a202c;
+  --secondary-text: #718096;
+  --border-color: #e2e8f0;
+  --primary-color: #4A90E2;
+  --primary-hover: #357ABD;
+  --error-color: #E53E3E;
+  --nav-hover-bg: #f7fafc;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--primary-text);
+  margin: 0;
+}
+
+.app-shell {
+  display: flex;
+  height: 100vh;
+  /* Add this to ensure it takes up the full browser width */
+  width: 100vw; 
+  overflow: hidden; /* Prevent double scrollbars */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: var(--sidebar-bg);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  z-index: 10; /* Keep sidebar on top */
+}
+
+.sidebar-header {
+  padding: 24px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sidebar-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 16px;
+  margin: 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--secondary-text);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-item:hover {
+  background-color: var(--nav-hover-bg);
+}
+
+.nav-item.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.nav-item svg {
+  font-size: 1.2rem;
+}
+
+.main-content {
+  flex-grow: 1;
+  /* Change padding to be inside a container, not on the main element */
+  padding: 0; 
+  overflow-y: auto;
+}
+
+.page-container {
+    padding: 32px;
+}

@@ -1,0 +1,12 @@
+# requirements.txt
+
+fastapi[all]
+strawberry-graphql[fastapi]
+sqlalchemy
+psycopg2-binary
+python-dotenv
+faker
+faker-commerce
+langchain
+langchain-google-genai>=1.0.0
+langchain-community

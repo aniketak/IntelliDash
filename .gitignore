@@ -1,0 +1,22 @@
+# Environment variables - VERY IMPORTANT!
+# This prevents your secret API keys from being published.
+.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Frontend dependencies and build artifacts
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/npm-debug.log*
+frontend/yarn-error.log*
+
+# IDE and OS specific files
+.vscode/
+.idea/
+.DS_Store
